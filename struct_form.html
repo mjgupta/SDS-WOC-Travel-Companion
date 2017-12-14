@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Form</title>
+</head>
+<body>
+	<img src="logo.png"> &nbsp; WOC'17&nbsp;
+	<h1 style="text-align: center;"> myTravel Companion</h1>
+		<h3> Offer a ride: </h3>
+		<p style="line-height: 1.8">
+			<fieldset><legend>Personal Details</legend>
+			Name:<input type="text" name="name" placeholder="Your full name"><br>
+			Enrollment number:<input type="number" name="Enroll" placeholder="Enrollment No.  here" min="130000" max="180000"><br>
+			Phone number: <input type="number" name="phno" placeholder="Phone no. here">
+			<input type="checkbox" name="consent" checked> Share my contact details</fieldset><br>
+			<fieldset><legend>Details of the Journey</legend>
+			From:
+			<input list="from" autofocus placeholder="From" required>
+			<datalist id="from">
+				<option value="Roorkee"></option><option value="Saharanpur"></option><option value="Meerut"></option><option value="Deoband"></option><option value="Haridwar"></option><option value="Rishikesh"></option><option value="Dehradun"></option><option value="Muzaffarnagar"></option><option value="Shamli"></option>
+			</datalist><br>
+			Destination:
+			<input type="list" name="to" required>
+			<datalist id="to">
+				<option value="Roorkee"></option><option value="Saharanpur"></option><option value="Meerut"></option><option value="Deoband"></option><option value="Haridwar"></option><option value="Rishikesh"></option><option value="Dehradun"></option><option value="Muzaffarnagar"></option><option value="Shamli"></option>
+				<option value="New Delhi"></option><option value="Jaipur"></option><option value="Delhi"></option><option value="Agra"></option><option value="Gwalior"></option><option value="Jhansi"></option><option value="Lucknow"></option><option value="Kanpur"></option><option value="Panipat"></option><option value="Karnal"></option><option value="Chandigarh"></option><option value="Udaipur"></option><option value="Bikaner"></option><option value="Kota"></option><option value="Ghaziabad"></option><option value="Patna"></option><option value="Ranchi"></option><option value="Kolkata"></option><option value="Bhopal"></option><option value="Indore"></option><option value="Mumbai"></option><option value="Pune"></option><option value="Ahemadabad"></option><option value="Hyderabad"></option><option value="Chennai"></option><option value="Vizag"></option><option value="Bhubhaneshwar"></option><option value="Dhanbad"></option><option value="Guwahati"></option><option value="Shimla"></option><option value="Manali"></option><option value="Kullu"></option>
+			</datalist><br>
+			Date: <input type="datetime-local" name="date" placeholder="Date and Time (approx)"><br>
+			Mode of Transport :
+			<select name="mode" size="4"><option name="car">Car (personal)</option><option name="bus">Bus (private)</option><option name="busg">Bus (government)</option><option name="train">Train</option><option name="air">Airlines</option></select>
+		</fieldset><br>
+		<fieldset><legend>Additional Details</legend>
+			PNR No. <input type="number" name="PNR">
+			<button type="button" onclick="PNR Status Displayed Below">Click To view current PNR status</button><br>
+			No. of people<input type="number" name="members"><br>
+			Major Stoppages: <textarea name="stops" style="height: 100px;width:700px;"></textarea><br>
+		</fieldset>
+		<input type="reset" name="Reset"><input type="submit" name="Save and Submit">
+		</p>
+<p align="center"><a href="struct_home.html">Back to Home </a></p>
+<footer style="text-align:center;">&copy;SDSLabs 2017</footer>
+
+	
+
+</body>
+</html>
